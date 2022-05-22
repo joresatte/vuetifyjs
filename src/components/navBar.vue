@@ -1,5 +1,4 @@
 <template>
- 
       <v-card
         color="grey lighten-4"
         flat
@@ -18,8 +17,8 @@
           
         </v-toolbar>
         <v-navigation-drawer flat app class="success" v-model="drawer">
-        <v-list>
 
+        <v-list>
           <v-list-item>
             <v-list-item-content>
               <v-list-item-title class="text-h6">
@@ -28,7 +27,6 @@
             </v-list-item-content>
           </v-list-item>
         </v-list>
-
 
          <v-list>
             <v-list-item v-for="i in links" :key="i.icon" router :to="i.route">
@@ -39,7 +37,7 @@
             <v-list-item-content>
             <v-list-item-title class="white--text">{{i.text}} </v-list-item-title>
             </v-list-item-content>
-        
+      
             </v-list-item>
          </v-list>
        
